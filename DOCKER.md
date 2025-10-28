@@ -44,7 +44,7 @@ aecf748f433b   hello-world          "/hello"   About an hour ago   Exited (0) Ab
 
 **Docker run -d -p puerto host:Puerto contenedor:** redirección de puertos.
 
-**curl 127.0.0.1**:
+curl 127.0.0.1:
 <!DOCTYPE html>
 
 <html>
