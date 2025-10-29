@@ -92,4 +92,6 @@ Commercial support is available at
 </html>
 
 **docker exec -it a1b /bin/bash**: es para acceder al contenedor por id, el -it es para abrir el entorno interactivo.
+**cd usr/share/nginx/html**: ubicación página web:
+
 
