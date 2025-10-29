@@ -16,11 +16,11 @@
 
 **docker ps -a**: dockers activos o no activos
 
-**CONTAINER ID   IMAGE                COMMAND    CREATED             STATUS                         PORTS     NAMES**
+| CONTAINER ID | IMAGE              | COMMAND   | CREATED           | STATUS                         | PORTS | NAMES            |
+|--------------|-------------------|-----------|------------------|--------------------------------|-------|------------------|
+| 63446521bd7e | hello-world:latest | "/hello"  | 4 minutes ago     | Exited (0) 4 minutes ago       |       | silly_blackwell  |
+| aecf748f433b | hello-world        | "/hello"  | About an hour ago | Exited (0) About an hour ago   |       | sweet_bhaskara   |
 
-63446521bd7e   hello-world:latest   "/hello"   4 minutes ago       Exited (0) 4 minutes ago                 silly\_blackwell
-
-aecf748f433b   hello-world          "/hello"   About an hour ago   Exited (0) About an hour ago             sweet\_bhaskara
 
 
 
@@ -108,6 +108,7 @@ hub.docker.com/_/wordpress
 docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
 docker run -d -p 3306:3306 -e MYSQL_ROOT_PASWORD=TallerUbuntu
 docker run -d -p 8080:80 -e WORDPRESS_DB_HOST=
+
 
 
 
