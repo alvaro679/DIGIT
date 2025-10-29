@@ -104,10 +104,15 @@ docker volume prune:
 
 ### Pasos WordPress y MySql
 hub.docker.com/_/mysql
+
+
 hub.docker.com/_/wordpress
+
+
 docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
 docker run -d -p 3306:3306 -e MYSQL_ROOT_PASWORD=TallerUbuntu
 docker run -d -p 8080:80 -e WORDPRESS_DB_HOST=
+
 
 
 
