@@ -94,5 +94,20 @@ Commercial support is available at
 **docker exec -it a1b /bin/bash**: es para acceder al contenedor por id, el -it es para abrir el entorno interactivo.
 **cd usr/share/nginx/html**: ubicación página web:
 
-docker inspect a1b4 -f "{{.NetworkSettings.IPAddress}}": se ve la ip asignada al contenedor
+docker inspect a1b4 -f "{{.NetworkSettings.IPAddress}}" o docker inspect a1b4 | grep IPAddress: se ve la ip asignada al contenedor
+docker -v: para crear volúmenes.
+/var/lib/docker/volume/: donde guarda los volumenes.
+docker volume create my-vol: para crear un volumen.
+docker volume ls:
+docker volume inspect my-vol:
+docker volume prune:
+
+### Pasos WordPress y MySql
+hub.docker.com/_/mysql
+hub.docker.com/_/wordpress
+docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+docker run -d -p 3306:3306 -e MYSQL_ROOT_PASWORD=TallerUbuntu
+docker run -d -p 8080:80 -e WORDPRESS_DB_HOST=
+
+
 
